@@ -1,9 +1,13 @@
 # How to GENERALize Across Many Software Projects?(with case studies on Predicting Defect and Project Health
 
 ## Abstract:
-Despite decades of research, SE lacks widely accepted models (that offer precise quantitative predictions) about  what factors most influence software quality. This paper provides a "good news" result that such general models can be generated using a new transfer learning framework called "GENERAL". Given a tree of recursively clustered project data, GENERAL promotes a model upwards if it performs best in the lower clusters (stopping when the promoted model performs worse than the models seen at a lower level). 
+Despite decades of research, Software Engineering (SE) lacks widely accepted models (that offer precise quantitative stable predictions) about  what factors most influence software quality. This paper provides a promising result showing such stable models can be generated using a new transfer learning framework called "STABILIZER". Given a tree of recursively clustered projects (using project meta-data), STABILIZER promotes a model upwards if it performs best in the lower clusters (stopping when the promoted model performs worse than the models seen at a lower level). 
 
-The number of models found by GENERAL  is minimal: one for  defect prediction (across 756 projects) and less than a dozen for project health (across 1628 projects). Hence, via GENERAL, it is possible to make conclusions that  hold across hundreds of projects at a time.  Further, the models produced in this manner offer predictions that perform as well or better than prior studies. 
+The number of models found by STABILIZER  is minimal: one for  defect prediction (756 projects) and less than a dozen for project health (1628 projects). Hence, via STABILIZER, it is possible to find a few projects which can be used for transfer learning and make conclusions that  hold across hundreds of projects at a time.  Further, the models produced in this manner offer predictions that perform as well or better than the prior state-of-the-art. 
+
+To the best of our knowledge, STABILIZER is order of magnitude faster than the prior state-of-the-art transfer learners which seek to find conclusion stability, and these case studies are the largest demonstration of the generalizability of quantitative predictions of project quality yet reported in the SE literature.
+
+In order to support open science, all our scripts and data are online at https://github.com/Anonymous633671/STABILIZER.
 
 ## Required Python Version:
 1. Python 3.7 and above
