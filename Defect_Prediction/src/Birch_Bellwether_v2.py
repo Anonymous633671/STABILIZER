@@ -320,6 +320,6 @@ if __name__ == "__main__":
             response = th.join()
             results = response
         stop = timeit.default_timer() 
-        times.append((stop - startz*len(cluster_ids)))
+        times.append((stop - start*len(cluster_ids)))
     avg_time =  np.median(times)
     print("Avg Model training time: ", avg_time)
